@@ -1,0 +1,331 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Roboto:wght@400;500&display=swap');
+.s-color{
+    color: #DC3545
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.attractive-area-start{
+    height: 100vh;
+    width: 100%;
+    background: url('../asset/home.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+}
+.attractive-area-start:after{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    z-index: -1;
+    content: '';
+    opacity: 0.7;
+    left: 0;
+    top: 0;
+}
+.navbar-area-start{
+    height: auto;
+    width:100%;
+    padding: 10px;
+}
+.navbar-area-start .navbar-image{
+    height: 70px;
+    width: 70px;
+    
+}
+.navbar-image img{
+    height: 100% ;
+    width: 100%;
+    border: 5px round white
+}
+.menu-area-start{
+    width: :100%;
+    height: auto;
+    text-align: right
+}
+.menu-area-start ul li{
+    list-style: none;
+    display: inline-block;
+}
+.menu-area-start ul li a{
+  text-decoration: none;
+  display: inline-block;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #D9D9DA
+}
+.menu-area-start ul li a:hover{
+    background: green
+}
+.attractive-body-area{
+    width: 100%;
+    height: 70vh;;
+    display: table
+}
+.attractive-content{
+    display: table-cell;
+    width: 100%;
+    height: 70vh;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff
+}
+.attractive-content h1{
+   font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    word-spacing: 10px;
+    letter-spacing: -3px
+}
+
+.attractive-content>span{
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 7px;
+    letter-spacing: 4px;
+    
+    
+}  
+.mouse-point{
+    width: 30px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 8%;
+    overflow: hidden;
+    background: #262626
+}
+.mouse-point:after{
+    position: absolute;
+    content: '|';
+    color: aqua;
+    left: 11;
+    left: 44%;
+    top: -1;
+    animation: loops 2s infinite
+}
+@keyframes loops{
+    0%{top: -24%; opacity: 0}
+    25%{top:  24%; opacity: 0.5}
+    50%{top:  48%; opacity: 1}
+    75%{top:  72%; opacity: 0.5}
+    100%{top:  -24%; opacity: 0}
+}
+    
+/*new page*/
+.bio-page{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    padding-top: 50px
+}
+.page-title{
+    line-height: 30px;
+    text-transform: capitalize
+        
+}
+.page-title h2{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative
+}
+.page-title h2:after{
+    position: absolute;
+    content: '';
+    background: #DC3545;
+    height: 68px;
+    width: 7px;
+    top: 11px;
+    left: -2%;
+    margin: auto;
+}
+    
+.page-title h2:before{
+       position: absolute;
+    content: '';
+    background: #DC3545;
+    height: 4px;
+    width: 140px;
+    top: 56px;
+    left: -2%;
+    margin: auto;
+}
+.my-image{
+    height: 500px;
+    width: 450px;
+    padding-top: 50px;
+   
+}
+.my-image img{
+    height: 100%;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    padding: 3px
+}
+.bio-part {
+    padding-top:50px; 
+}
+.bio-part h4{
+    color:#DC3545;
+    font-weight: 610
+        
+}
+.bio-part h2{
+    font-weight: 700;
+    word-spacing: 4px;
+    line-height: 50px
+}
+.bio-part p{
+   text-align: justify;
+    line-height: 30px
+}
+.information-text .btn{
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 28px;
+    padding: 14px 43px;
+    letter-spacing: 1.3px;
+    background:#DC3545
+} 
+.information-text .btn#b{
+      color: black;
+    background: #ffffff;
+    border: 1px solid black;
+}
+
+.Servicespage{
+    height: 120vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    padding-top: 50px;
+    
+}
+
+.service-page-title h2{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+    z-index: 1
+}
+.service-page-title h2:after{
+   position: absolute;
+    content: '';
+    height: 69px;
+    width: 7px;
+    background: #DC3545;
+    bottom: -30px;
+    left: -2%;
+    z-index: -1;
+}
+.service-page-title h2:before{
+    position: absolute;
+    content: '';
+    background: #DC3545;
+    z-index: -1;
+    height: 4px;
+    width: 128px;
+    left: -2%;
+    bottom: -10px
+    
+}
+
+.service-page-title span{
+    line-height: 30px;
+    text-transform: capitalize;
+}
+   
+.service-page{
+    background: white;
+    width: 100%;
+    height: 260px;
+    border: 1px solid #dddddd;
+    margin-top: 55px;
+    padding: 38px 24px;
+   
+}
+
+.below-part{
+    display: inline-flex;
+    margin-top: -25px
+}
+
+.service-page h3{
+    margin: 15px 10px; 
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333
+}
+ .service-page span{
+     display: block;
+    text-align: center;
+}
+.service-page p{
+    margin: 30px 30px 20px 30px;
+    text-align: center;
+   line-height: 28px
+}
+.property{
+    margin-top: 50px;
+    height: 35vh;
+    width: 100%;
+    background: url(hire.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    z-index: 1
+}
+.property:after{
+    background: black;
+    position: absolute;
+    z-index: -1;
+    height: 35vh;
+    width: 100%;
+    display: inline-block;
+    opacity: 0.8;
+    content: '';
+    top: 0;
+    left: 0;
+}
+.sa h2{
+    color: white;
+    margin-top: 90px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px
+}
+.sa p{
+    color: #9F9F9F;
+    font-size: 20px;
+    display: inline-block;
+}
+.property-button a{
+    display: inline-block;
+    color: #ffffff;
+/*    border: 1px solid #ffffff;*/
+    border-radius: 28px;
+    padding: 12px 45px;
+    letter-spacing: 1.3px;
+    background:#DC3545;
+    position: relative
+}
+.property-button a{
+    position: absolute;
+    text-decoration: none;
+    margin: 110px 0px 0px 120px;
+        right: -45px
+}
